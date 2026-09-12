@@ -52,6 +52,8 @@
             } while (answer.ToLower() == "yes");
 
             Console.WriteLine("Thank you for using the Calculator!");
+
+
         }
     }
 }
