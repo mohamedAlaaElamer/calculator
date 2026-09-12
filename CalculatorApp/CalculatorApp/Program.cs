@@ -39,8 +39,16 @@
                 }
                 else if (operation == "/")
                 {
-                    double result = double.Parse(firstNumber) / double.Parse(secondNumber);
-                    Console.WriteLine($"The result is: {result}");
+                    if (double.Parse(secondNumber) == 0)
+                    {
+                        Console.WriteLine("Error: Division by zero is not allowed.");
+                        continue;
+                    }
+                    else
+                    {
+                        double result = double.Parse(firstNumber) / double.Parse(secondNumber);
+                        Console.WriteLine($"The result is: {result}");
+                    }
                 }
                 else
                 {
